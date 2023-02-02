@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Hasib's Projects</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/hasib favicon.png">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="index.html"> <i class="fas fa-home"></i> <span>home</span> </a>
+    <a href="experiences.html"> <i class="fas fa-tools"></i> <span>experiences</span> </a>
+    <a href="projects.html"> <i class="fas fa-briefcase"></i> <span>projects</span> </a>
+    <a href="researches.html"> <i class="fas fa-book-reader"></i> <span>researches</span> </a>
+    <a href="certifications.html"> <i class="fas fa-award"></i> <span>certifications</span> </a>
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- projects section starts  -->
+
+<section class="projects">
+
+    <h1 class="heading"> <span>my</span> works </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/data science projects.png" alt="">
+            <div class="content">
+                <h3>Data Science Projects</h3>
+                <p>All Data Science projects which I have implemented so far are showcased here which also reflect my learnings from different platforms like Coursera, DataCamp, freeCodeCamp & others.</p>
+                <a href="https://github.com/HasibAlMuzdadid/Data-Science-Projects">Github Link</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/deep learning.jpg" alt="">
+            <div class="content">
+                <h3>Deep Learning Projects</h3>
+                <p>All Machine Learning and Deep Learning Projects which I have implemented so far are showcased here which also reflect my learnings from different platforms like Coursera, DeepLearning.AI & others.</p>
+                <a href="https://github.com/HasibAlMuzdadid/Machine-Learning-and-Deep-Learning-Projects">Github Link</a>
+            </div>
+        </div>
+       
+        <div class="box">
+            <img src="images/hyperspectral image.jpg" alt="">
+            <div class="content">
+                <h3>Hyperspectral Image Classification</h3>
+                <p>This project contains comparative analysis of different feature extraction techniques for Hyperspectral Image classification.</p>
+                <a href="https://github.com/HasibAlMuzdadid/Hyperspectral-Image-Classification">Github Link</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/pet image.jpg" alt="">
+            <div class="content">
+                <h3>Pet Image Classification</h3>
+                <p>Classification between pet images using different approaches like CNN, Transfer Learning on famous cats vs dogs dataset available on kaggle.</p>
+                <a href="https://github.com/HasibAlMuzdadid/Pet-Image-Classification">Github Link</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/customer segmentation.jpg" alt="">
+            <div class="content">
+                <h3>Customer Segmentation</h3>
+                <p>All Customer Segmentation Projects which I have implemented so far are showcased here.</p> 
+                <a href="https://github.com/HasibAlMuzdadid/Customer-Segmentation">Github Link</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/recommender system.jpg" alt="">
+            <div class="content">
+                <h3>Recommender Systems</h3>
+                <p>All Recommender System Projects which I have implemented so far are showcased here.</p>
+                <a href="https://github.com/HasibAlMuzdadid/Recommender-Systems">Github Link</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/blood.jpg" alt="">
+            <div class="content">
+                <h3>Blood Bank Management System</h3>
+                <p>A blood bank management system having features like online blood requesting, donor registering, blood camps, notice board, full list of donors etc.</p>
+                <a href="https://github.com/HasibAlMuzdadid/Blood-Bank-Management-System">Github Link</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/keep up.jpg" alt="">
+            <div class="content">
+                <h3>Keep UP!</h3>
+                <p>This game was developed for the completion of 80 hours long "Mobile Game Graphics Design" and "Advanced Mobile Game Development" courses.</p>
+                <a href="https://github.com/HasibAlMuzdadid/Keep-Up">Github Link</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="load-more"> load more <i class="fas fa-redo"></i></div>
+
+</section>
+
+
+
+<script>
+
+let loadMoreBtn = document.querySelector("#load-more");
+let currentItem = 4;
+    
+loadMoreBtn.onclick = () =>{
+    let boxes = [...document.querySelectorAll(".projects .box-container .box")];
+    for (var i = currentItem; i < currentItem + 4; i++){
+        boxes[i].style.display = "inline-block";
+    }
+    currentItem += 4;
+    
+    if(currentItem >= boxes.length){
+        loadMoreBtn.style.display = "none";
+    }
+}
+    
+</script>
+
+
+<!-- projects section ends -->
+
+<!-- footer section starts -->
+
+<footer>
+    <div class="footer-container">
+        <h4>Copyright &copy; 2022-2023 Hasib Al Muzdadid</h4>
+        <h4>All Rights Reserved</h4>
+    </div>  
+</footer>
+
+<!-- footer section ends -->
+
+
+</body>
+</html>
+
+<!-- Copyright 2022-2023 Hasib Al Muzdadid | All Rights Reserved  -->
