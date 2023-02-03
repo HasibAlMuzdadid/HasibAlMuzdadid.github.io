@@ -60,7 +60,7 @@ footer {
 .footer-container h4 {
   font-size: 1.3rem;
   font-weight: 200;
-  opacity: .1;
+  opacity: .2;
 }
 
 .heading {
@@ -187,35 +187,56 @@ footer {
   padding-bottom: .5rem;
 }
 
-.home .content .wrapper {
-  display: inline-flex;
+.home .content .subtitle {
+  display: grid;
+  place-content: left;
+  text-align: center;
 }
 
-.home .content .wrapper .txt {
+.home .content .subtitle h4 {
   font-size: 2.5rem;
   color: #c17f21;
   padding-top: 0rem;
   padding-bottom: 0rem;
   position: relative;
+  width: max-content;
 }
 
-.home .content .wrapper .txt::after {
+.home .content .subtitle h4::before,
+.home .content .subtitle h4::after {
   content: "";
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  background: #0d0d0d;
-  border-left: 3px solid #c17f21;
-  animation: typing 6s steps(40) infinite;
 }
 
-@keyframes typing {
-  100%{
+.home .content .subtitle h4::before {
+  background: #0d0d0d;
+  animation: 
+    typewriter 6s steps(40) forwards;
+}
+
+.home .content .subtitle h4::after {
+  width: 0.1em;
+  background: #c17f21;
+  animation: 
+    typewriter 6s steps(40) forwards,
+    blinking 750ms steps(40) infinite;
+}
+
+@keyframes typewriter {
+  to {
     left: 100%;
-    margin: 0 -15px 0 15px;
   }
-} 
+}
+
+@keyframes blinking {
+  to {
+    background: transparent;
+  }
+}
 
 
 .home .content p {
@@ -1119,8 +1140,11 @@ footer {
   .home .content h3 {
     font-size: 3rem;
   }
-  .home .content .wrapper .txt {
-    font-size : 2rem;
+  .home .content .subtitle {
+    place-content: center;
+  }
+  .home .content .subtitle h4 {
+    font-size: 2rem;
   }
   .github .github-container img {
     height: 100%;
