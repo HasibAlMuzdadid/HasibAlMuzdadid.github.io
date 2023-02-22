@@ -14,4 +14,4 @@ Email: muzdadid@gmail.com
 ## Project Description :
 This repository contains all the stuffs of my personal portfolio website. All my backgrounds, achievements and other stuffs are showcased here.
 
-**Language used :** HTML
+**Language used :** HTML,
