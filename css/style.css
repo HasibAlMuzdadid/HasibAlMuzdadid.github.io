@@ -35,9 +35,14 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 
-body {
+/* body {
   background: #0d0d0d;
   padding-bottom: 6.5rem;
+} */
+
+body {
+  background: #0d0d0d;
+  padding-left: 30rem;
 }
 
 section {
@@ -80,12 +85,13 @@ footer {
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  border-radius: 5rem;
+  border-radius: 1.5rem;
   background: #c17f21;
-  padding: .7rem;
+  padding: 0.6rem;
   font-size: 1.7rem;
   color: #fff;
   padding-left: 2rem;
+  margin-right: 0.4rem;
 }
 
 .btn i {
@@ -96,7 +102,8 @@ footer {
   text-align: center;
   background: #fff;
   color: #c17f21;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  border-radius: 1rem;
   margin-left: 1rem;
   -webkit-transition: .2s linear;
   transition: .2s linear;
@@ -106,7 +113,76 @@ footer {
   margin-left: 2rem;
 }
 
-.navbar {
+
+/* new navbar starts */
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+header .navbar{
+  width: 100%;
+}
+
+header .navbar ul{
+  list-style: none;
+  padding: 1rem 3rem;
+}
+
+header .navbar ul li a{
+  display: block;
+  padding: 1rem;
+  margin: 0.8rem 0;
+  background: #333;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 1rem;
+  transition: .2s linear;
+}
+
+header .navbar ul li a i {
+  color: #c17f21;
+  padding-right: .5rem;
+}
+
+header .navbar ul li a:hover {
+  background: #c17f21;
+  padding-bottom: 1rem;
+}
+
+header .navbar ul li a:hover i {
+  color: #fff;
+}
+
+#menu{
+  position: fixed;
+  top: 2rem; right: 2rem;
+  background: #c17f21;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+/* new navbar ends  */
+
+
+
+/* old navbar starts */
+
+/* .navbar {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -118,9 +194,10 @@ footer {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
+} */
 
-.navbar a {
+
+/* .navbar a {
   padding: 2rem;
   font-size: 2rem;
   background: #1a1a1a;
@@ -131,21 +208,24 @@ footer {
   text-align: center;
   -webkit-transition: .2s linear;
   transition: .2s linear;
-}
+} */
 
-.navbar a i {
+/* .navbar a i {
   color: #c17f21;
   padding-right: .5rem;
-}
+} */
 
-.navbar a:hover {
+/* .navbar a:hover {
   background: #c17f21;
   padding-bottom: 4rem;
-}
+} */
 
-.navbar a:hover i {
+/* .navbar a:hover i {
   color: #fff;
-}
+} */
+
+/* old navbar ends  */
+
 
 .home {
   display: -webkit-box;
@@ -168,8 +248,8 @@ footer {
 }
 
 .home .image img {
-  height: 50rem;
-  width: 50rem;
+  height: 45rem;
+  width: 45rem;
   padding: 1rem;
   border: var(--border-bold);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
@@ -859,7 +939,7 @@ footer {
 #load-more {
   display: inline-block;
   margin-top: 1rem;
-  border-radius: 5rem;
+  border-radius: 1.5rem;
   background: #c17f21;
   padding: .7rem;
   font-size: 1.7rem;
@@ -876,7 +956,8 @@ footer {
   text-align: center;
   background: #fff;
   color: #c17f21;
-  border-radius: 50%;
+  /* border-radius: 50%;*/
+  border-radius: 1rem;
   margin-left: 1rem;
   -webkit-transition: .2s linear;
   transition: .2s linear;
@@ -988,7 +1069,7 @@ footer {
 .certifications .box-container .box .content .btn {
   display: inline-block;
   margin-top: 1rem;
-  border-radius: 5rem;
+  border-radius: 1rem;
   background: #c17f21;
   padding: .7rem;
   font-size: 1.7rem;
@@ -1004,7 +1085,8 @@ footer {
   text-align: center;
   background: #fff;
   color: #c17f21;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  border-radius: 0.8rem;
   margin-left: 1rem;
   -webkit-transition: .2s linear;
   transition: .2s linear;
@@ -1104,23 +1186,60 @@ footer {
   border: 0.2rem solid #0d0d0d;
 }
 
+.research .table-container .table tr td span{
+  color: #c17f21;
+  font-weight: 300;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink{
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.5;
+  }
+}
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1404px) {
   html {
     font-size: 55%;
+  }
+  body{
+    padding-left: 30rem;
   }
   section {
     padding: 3rem 2rem;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1100px) {
   .heading {
     font-size: 8vw;
   }
-  .navbar a i {
+
+  /* new navbar starts  */
+  body{
+    padding-left: 0rem;
+  }
+  header{
+    left: -120%;
+    width: 30vw;
+  }
+  #menu{
+    display: block;
+  }
+  header.toggle{
+    left: 0%;
+  }
+  /* new navbar ends  */
+
+  /* old navbar starts */
+  /* .navbar a i {
     padding: 0;
   }
   .navbar a span {
@@ -1128,7 +1247,9 @@ footer {
   }
   .navbar a:hover {
     padding-bottom: 2rem;
-  }
+  } */
+  /* old navbar ends  */
+
   .home {
     text-align: center;
     gap: 2rem;
@@ -1156,10 +1277,14 @@ footer {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 680px) {
   html {
     font-size: 50%;
   }
+
+  header{
+    width: 100vw;
+  }
 }
 
-/* Copyright 2022-2023 Hasib Al Muzdadid | All Rights Reserved */
+/* Copyright 2022-2024 Hasib Al Muzdadid | All Rights Reserved */
