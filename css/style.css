@@ -1159,7 +1159,7 @@ header .navbar ul li a:hover i {
 }
 
 .research .table-container .table {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   width: 100%;
   height: auto;
   background-color: #1a1a1a;
@@ -1174,6 +1174,7 @@ header .navbar ul li a:hover i {
   font-weight: normal;
   font-size: 1.4rem;
   padding: 0.5rem;
+  width: 8rem;
   text-align: left;
   border: 0.2rem solid #0d0d0d;
 }
