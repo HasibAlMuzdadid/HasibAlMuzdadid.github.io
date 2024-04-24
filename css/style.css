@@ -45,6 +45,18 @@ body {
   padding-left: 30rem;
 }
 
+
+a {
+  color: #fff;
+}
+
+a:hover {
+	color: #c17f21;
+	text-decoration: underline;
+}
+
+
+
 section {
   padding: 5rem 9%;
 }
