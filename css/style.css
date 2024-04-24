@@ -46,17 +46,6 @@ body {
 }
 
 
-a {
-  color: #fff;
-}
-
-a:hover {
-	color: #c17f21;
-	text-decoration: underline;
-}
-
-
-
 section {
   padding: 5rem 9%;
 }
@@ -677,6 +666,15 @@ header .navbar ul li a:hover i {
   font-weight: normal;
 }
 
+.updates a {
+  color: #fff;
+}
+
+.updates a:hover {
+	color: #c17f21;
+	text-decoration: underline;
+}
+
 
 .experiences .box-container {
   padding-top: 2rem;
@@ -1197,6 +1195,15 @@ header .navbar ul li a:hover i {
   font-size: 1.4rem;
   padding: 0.5rem;
   border: 0.2rem solid #0d0d0d;
+}
+
+.research .table-container .table tr td a {
+  color: #fff;
+}
+
+.research .table-container .table tr td a:hover {
+	color: #c17f21;
+	text-decoration: underline;
 }
 
 .research .table-container .table tr td span{
