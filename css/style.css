@@ -874,6 +874,16 @@ header .navbar ul li a:hover i {
   padding-bottom: 0rem;
 }
 
+.achievements h2 {
+  font-size: 3rem;
+  color: #c17f21;
+  text-transform: uppercase;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+
 
 .projects {
   text-align: center;
