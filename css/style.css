@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700&display=swap");
 
+
 :root {
   --yellow: #c17f21;
   --border-bold: .5rem solid var(--yellow);
@@ -456,6 +457,17 @@ header .navbar ul li a:hover i {
 }
 
 
+.skills h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 8rem;
+}
+
+.skills h1 span {
+  color: #c17f21;
+}
+
 .skills i {
   font-size: 2.3rem;
   color: #c17f21;
@@ -515,6 +527,19 @@ header .navbar ul li a:hover i {
 .skills .bar-container .bar:hover h3 {
   color: #0d0d0d;
   background-color: var(--yellow);
+}
+
+
+
+.education h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 8rem;
+}
+
+.education h1 span {
+  color: #c17f21;
 }
 
 
@@ -1169,7 +1194,7 @@ header .navbar ul li a:hover i {
 }
 
 .research .table-container .table {
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
   width: 100%;
   height: auto;
   background-color: #1a1a1a;
@@ -1213,6 +1238,19 @@ header .navbar ul li a:hover i {
   padding: 0.5rem;
   animation: blink 1s linear infinite;
 }
+
+.research .table-container .table tr td ul {
+  list-style-type: square;
+  list-style-position: outside;
+  padding-left: 1.9rem;
+}
+
+.research .table-container .table tr td li {
+  color: #fff;
+  padding-bottom: 0rem;
+}
+
+
 
 @keyframes blink{
   50% {
