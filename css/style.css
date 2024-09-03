@@ -884,6 +884,40 @@ header .navbar ul li a:hover i {
 }
 
 
+.achievements i {
+  font-size: 2rem;
+  color: #c17f21;
+  position: absolute;
+  padding: auto;
+  line-height: 2.3rem;
+}
+
+.achievements h3 {
+  font-size: 1.8rem;
+  color: #aaa;
+  padding-bottom: 1.5rem;
+  padding-top: 0rem;
+  padding-left: 3.5rem;
+  font-weight: 300; 
+}
+
+.achievements h3 span {
+  font-size: 1.8rem;
+  color: #c17f21;
+  font-weight: normal;
+}
+
+.achievements a {
+  color: #fff;
+}
+
+.achievements a:hover {
+	color: #c17f21;
+	text-decoration: underline;
+}
+
+
+
 
 .projects {
   text-align: center;
