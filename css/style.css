@@ -238,14 +238,14 @@ header .navbar ul li a:hover i {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 4rem;
+  gap: 8rem;
   min-height: calc(100vh - 6.5rem);
 }
 
 .home .image {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
+      -ms-flex: 1 1 0rem;
+          flex: 1 1 0rem;
   text-align: center;
 }
 
@@ -261,6 +261,7 @@ header .navbar ul li a:hover i {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 42rem;
           flex: 1 1 42rem;
+  padding-right: 8rem;        
 }
 
 .home .content h3 {
