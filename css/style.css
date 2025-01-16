@@ -243,9 +243,9 @@ header .navbar ul li a:hover i {
 }
 
 .home .image {
-  /* -webkit-box-flex: 1;
+  -webkit-box-flex: 1;
       -ms-flex: 1 1 0rem;
-          flex: 1 1 0rem; */
+          flex: 1 1 0rem;
   text-align: center;
 }
 
@@ -1388,6 +1388,10 @@ header .navbar ul li a:hover i {
 
   header{
     width: 100vw;
+  }
+
+  .home .content {
+    padding: 0.5rem;        
   }
 }
 
