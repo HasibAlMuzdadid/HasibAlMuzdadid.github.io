@@ -297,15 +297,15 @@ header .navbar ul li a:hover i {
 .home .content .subtitle h4::before {
   background: #0d0d0d;
   animation: 
-    typewriter 6s steps(40) forwards;
+    typewriter 6s steps(43) forwards;
 }
 
 .home .content .subtitle h4::after {
   width: 0.1em;
   background: #c17f21;
   animation: 
-    typewriter 6s steps(40) forwards,
-    blinking 750ms steps(40) infinite;
+    typewriter 6s steps(43) forwards,
+    blinking 750ms steps(43) infinite;
 }
 
 @keyframes typewriter {
@@ -327,6 +327,7 @@ header .navbar ul li a:hover i {
   padding: 1rem 0;
   line-height: 1.7;
   padding-top: 3rem;
+  text-align: justify;
 }
 
 .about .row {
