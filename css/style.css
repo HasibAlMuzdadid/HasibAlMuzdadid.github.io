@@ -1660,13 +1660,14 @@ header .navbar ul li a:hover i {
   html {
     font-size: 50%;
   }
-
   header{
     width: 100vw;
   }
-
   .home .content {
     padding: 0.5rem;        
+  }
+  .projects .box-container .box .hidden-content img {
+  max-width: 80%;
   }
 }
 
