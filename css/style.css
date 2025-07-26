@@ -1549,6 +1549,27 @@ header .navbar ul li a:hover i {
 	text-decoration: underline;
 }
 
+.research .table-container .table tr td a.full-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0px 4px;
+  background-color: #fff;
+  color: #0d0d0d;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.research .table-container .table tr td a.full-text:hover {
+  color: #0d0d0d;
+	background-color: #aaa;
+}
+
+.research .table-container .table tr td a.full-text i {
+  color: red;
+}
+
 .research .table-container .table tr td span{
   color: #c17f21;
   font-weight: 300;
