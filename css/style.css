@@ -37,12 +37,10 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 
-
 body {
   background: #0d0d0d;
   padding-left: 30rem;
 }
-
 
 section {
   padding: 5rem 9%;
