@@ -997,6 +997,7 @@ header .navbar ul li a.active i {
   position: relative;
   overflow: hidden;
   border: var(--border-bold-ash);
+  background: #1a1a1a;
   padding: 0rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
@@ -1199,6 +1200,7 @@ header .navbar ul li a.active i {
   overflow: hidden;
   position: relative;
   border: var(--border-bold-ash);
+  background: #1a1a1a;
   padding: 0rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
